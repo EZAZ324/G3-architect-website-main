@@ -1,0 +1,238 @@
+/* Google font: work sans */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+/* Common styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.primary_heading {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.secondary_heading {
+    color: #131313;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.description_text {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    /* 162.5% */
+}
+
+.cart_text {
+    color: #727272;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.center_align {
+    text-align: center;
+}
+
+.primary_button {
+    color: #FFF;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 20px 25px;
+    border-radius: 8px;
+    background: #FF900E;
+    cursor: pointer;
+    border: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* Header styles */
+header {
+    padding: 50px 12.5%;
+    background: rgba(255, 144, 14, 0.10);
+}
+
+/* nav styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    color: #424242;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+    /* 144.444% */
+    margin-right: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+/* Banner styles */
+.banner_description{
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.banner_description h1{
+    color:#131313;
+font-size: 4rem;
+font-weight: 700;
+}
+
+header button {
+    margin: 0 auto;
+    display: block;
+}
+
+/* team container styles */
+.team_container{
+    padding: 0 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+}
+.team_container div{
+    width: 47%;
+}
+.team_container_image{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.team_container_description p{
+    margin: 20px 0;
+}
+
+
+/* feature styles */
+.feature{
+    margin-top: 50px;
+    padding: 0 12.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature > div{
+    width: 45%;
+    height: 100%;
+}
+
+.feature_heading{
+    width: 75%;
+}
+
+.feature_description{
+    margin: 20px 0 40px 0;
+}
+
+.feature_card_container div{
+    margin-bottom: 40px;
+    padding: 30px;
+    border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.feature_container_image{
+    border: 2px solid black;
+}
+.feature_container_image img{
+    height: 100%;
+}
+.feature_description_container{
+    border: 2px solid seagreen;
+}
+
+
+/* For tablet devices */
+@media screen and (max-width: 992px) {
+    /* main styles */
+
+    /* team styles */
+    .team_container{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+        padding: 0 25%;
+        gap: 50px;
+    }
+    .team_container div{
+        width: 100%;
+    }
+    .team_container_description{
+        text-align: center;
+    }
+
+}
+
+/* For mobile devices */
+@media screen and (max-width: 576px) {
+
+    /* header styles */
+
+
+    header{
+        padding: 30px 10%;
+    }
+    /* nav styles */
+    nav{
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav h2{
+        text-align: center;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul li{
+        margin: 0;
+    }
+
+
+
+    /* main styles */
+
+    /* team container styles */
+    .team_container{
+        padding: 0 10%;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .team_container div{
+        width: 100%;
+        text-align: center;
+    }
+    .team_container_image{
+        grid-template-columns: auto;
+    }
+    /* .team_container_image img:nth-child(3){
+        display: hidden;
+        border: 5px solid black;
+    } */
+}
