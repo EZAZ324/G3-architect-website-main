@@ -88,7 +88,7 @@ nav ul li a {
 }
 
 /* Banner styles */
-.banner_description{
+.banner_description {
     max-width: 800px;
     margin: 50px auto;
     display: flex;
@@ -96,10 +96,10 @@ nav ul li a {
     gap: 20px;
 }
 
-.banner_description h1{
-    color:#131313;
-font-size: 4rem;
-font-weight: 700;
+.banner_description h1 {
+    color: #131313;
+    font-size: 4rem;
+    font-weight: 700;
 }
 
 header button {
@@ -108,65 +108,117 @@ header button {
 }
 
 /* team container styles */
-.team_container{
+.team_container {
     padding: 0 15%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 50px;
 }
-.team_container div{
+
+.team_container div {
     width: 47%;
 }
-.team_container_image{
+
+.team_container_image {
     display: grid;
     grid-template-columns: auto auto;
     gap: 10px;
 }
 
-.team_container_description p{
+.team_container_description p {
     margin: 20px 0;
 }
 
 
 /* feature styles */
-.feature{
+.feature {
     margin-top: 50px;
-    padding: 0 12.5%;
+    border: 2px solid red;
+    margin: 0 12.5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.feature > div{
+.feature>div {
     width: 45%;
     height: 100%;
 }
 
-.feature_heading{
+.feature_description_container {
+    border: 2px solid seagreen;
+}
+
+.feature_heading {
     width: 75%;
 }
 
-.feature_description{
+.feature_description {
     margin: 20px 0 40px 0;
 }
 
-.feature_card_container div{
+.feature_card_container div {
     margin-bottom: 40px;
     padding: 30px;
     border-radius: 8px;
-background: #FFF;
-box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
 }
-.feature_container_image{
+
+.feature_container_image {
     border: 2px solid black;
 }
-.feature_container_image img{
+
+.feature_container_image img {
     height: 100%;
+    width: 100%;
 }
-.feature_description_container{
-    border: 2px solid seagreen;
+
+
+
+/* Fact section styles */
+.fact {
+    margin: 100px 12.5%;
 }
+
+.fact_description_container {
+    width: 30%;
+}
+
+.fact_description_container p{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.fact_card_container {
+    color: #424242;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fact_card_container>div {
+    flex-basis: 20%;
+}
+
+.fact_card_container div img {
+    height: 30%;
+    width: 20%;
+    display: block;
+    margin: 20px auto;
+}
+
+
+.feature_card_container h2{
+    font-size: 2.8rem;
+}
+.feature_card_container p{
+    font-size: 1.25rem;
+}
+
+
+
 
 
 /* For tablet devices */
@@ -174,20 +226,35 @@ box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
     /* main styles */
 
     /* team styles */
-    .team_container{
+    .team_container {
         flex-direction: column-reverse;
         margin: 50px 0;
         padding: 0 25%;
         gap: 50px;
     }
-    .team_container div{
+
+    .team_container div {
         width: 100%;
     }
-    .team_container_description{
+
+    .team_container_description {
+        text-align: center;
+    }
+
+    /* Fcat container styles */
+    .fact_description_container {
+        width: 100%;
         text-align: center;
     }
 
 }
+
+
+
+
+
+
+
 
 /* For mobile devices */
 @media screen and (max-width: 576px) {
@@ -195,22 +262,26 @@ box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
     /* header styles */
 
 
-    header{
+    header {
         padding: 30px 10%;
     }
+
     /* nav styles */
-    nav{
+    nav {
         flex-direction: column;
         gap: 10px;
     }
-    nav h2{
+
+    nav h2 {
         text-align: center;
     }
-    nav ul{
+
+    nav ul {
         display: flex;
         justify-content: space-between;
     }
-    nav ul li{
+
+    nav ul li {
         margin: 0;
     }
 
@@ -219,20 +290,35 @@ box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
     /* main styles */
 
     /* team container styles */
-    .team_container{
+    .team_container {
         padding: 0 10%;
         flex-direction: column-reverse;
         gap: 30px;
     }
-    .team_container div{
+
+    .team_container div {
         width: 100%;
         text-align: center;
     }
-    .team_container_image{
+
+    .team_container_image {
         grid-template-columns: auto;
     }
+
     /* .team_container_image img:nth-child(3){
         display: hidden;
         border: 5px solid black;
     } */
+
+    /* fact container styles */
+    .fact_description_container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .fact_card_container{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
 }
